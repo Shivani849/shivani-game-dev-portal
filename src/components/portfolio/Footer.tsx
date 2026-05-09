@@ -1,4 +1,5 @@
-import { Gamepad2, Github, Linkedin, Mail } from "lucide-react";
+import { Gamepad2, Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./icons";
 
 export function Footer() {
   return (
@@ -12,7 +13,7 @@ export function Footer() {
           © {new Date().getFullYear()} Shivani Mandoddi. Crafted with Unity-grade attention to detail.
         </div>
         <div className="flex gap-3">
-          {[Linkedin, Github, Mail].map((Icon, i) => (
+          {[LinkedinIcon, GithubIcon, Mail].map((Icon, i) => (
             <a key={i} href="#" className="size-9 grid place-items-center rounded-lg glass hover:neon-glow transition">
               <Icon className="size-4" />
             </a>

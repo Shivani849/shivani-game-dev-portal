@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { SectionHeader } from "./SectionHeader";
+import { GithubIcon, LinkedinIcon } from "./icons";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -15,8 +16,8 @@ export function Contact() {
           <div className="lg:col-span-2 space-y-3">
             {[
               { icon: Mail, label: "Email", value: "shivani.mandoddi@example.com", href: "mailto:shivani.mandoddi@example.com" },
-              { icon: Linkedin, label: "LinkedIn", value: "/in/shivani-mandoddi", href: "https://linkedin.com" },
-              { icon: Github, label: "GitHub", value: "@shivani-mandoddi", href: "https://github.com" },
+              { icon: LinkedinIcon, label: "LinkedIn", value: "/in/shivani-mandoddi", href: "https://linkedin.com" },
+              { icon: GithubIcon, label: "GitHub", value: "@shivani-mandoddi", href: "https://github.com" },
             ].map((c) => (
               <a
                 key={c.label}
