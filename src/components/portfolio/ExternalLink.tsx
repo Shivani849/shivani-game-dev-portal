@@ -13,6 +13,12 @@ export function ExternalLink({ href, onClick, children, rel, target, ...props }:
       return;
     }
 
+    const isWebUrl = /^https?:\/\//i.test(href);
+
+    if (!isWebUrl) {
+      return;
+    }
+
     event.preventDefault();
 
     if (typeof window !== "undefined") {
