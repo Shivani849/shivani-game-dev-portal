@@ -3,6 +3,7 @@ import { Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { SectionHeader } from "./SectionHeader";
 import { GithubIcon, LinkedinIcon } from "./icons";
+import { ExternalLink } from "./ExternalLink";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -19,11 +20,9 @@ export function Contact() {
               { icon: LinkedinIcon, label: "LinkedIn", value: "/in/shivani-m-32487619b", href: "https://www.linkedin.com/in/shivani-m-32487619b/" },
               { icon: GithubIcon, label: "Play Store", value: "Fusebox & YesGnome titles", href: "https://play.google.com/store/apps/developer?id=YesGnome+LLC" },
             ].map((c) => (
-              <a
+              <ExternalLink
                 key={c.label}
                 href={c.href}
-                target="_blank"
-                rel="noreferrer"
                 className="flex items-center gap-4 glass rounded-2xl p-4 hover-lift group"
               >
                 <div className="size-11 rounded-xl bg-gradient-to-br from-primary/30 to-accent/30 grid place-items-center group-hover:neon-glow transition">
@@ -33,7 +32,7 @@ export function Contact() {
                   <div className="text-xs font-mono text-muted-foreground uppercase tracking-wider">{c.label}</div>
                   <div className="font-medium">{c.value}</div>
                 </div>
-              </a>
+              </ExternalLink>
             ))}
           </div>
 
