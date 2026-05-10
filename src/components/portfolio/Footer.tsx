@@ -1,5 +1,6 @@
 import { Gamepad2, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
+import { ExternalLink } from "./ExternalLink";
 
 const socials = [
   { Icon: LinkedinIcon, href: "https://www.linkedin.com/in/shivani-m-32487619b/", label: "LinkedIn" },
@@ -20,16 +21,25 @@ export function Footer() {
         </div>
         <div className="flex gap-3">
           {socials.map(({ Icon, href, label }) => (
+            href.startsWith("http") ? (
+            <ExternalLink
+              key={label}
+              href={href}
+              aria-label={label}
+              className="size-9 grid place-items-center rounded-lg glass hover:neon-glow transition"
+            >
+              <Icon className="size-4" />
+            </ExternalLink>
+            ) : (
             <a
               key={label}
               href={href}
-              target={href.startsWith("http") ? "_blank" : undefined}
-              rel={href.startsWith("http") ? "noreferrer" : undefined}
               aria-label={label}
               className="size-9 grid place-items-center rounded-lg glass hover:neon-glow transition"
             >
               <Icon className="size-4" />
             </a>
+            )
           ))}
         </div>
       </div>

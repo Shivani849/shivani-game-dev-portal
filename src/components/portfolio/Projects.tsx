@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Smartphone, Gamepad2 } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
+import { ExternalLink as ExternalAnchor } from "./ExternalLink";
 
 const projects = [
   {
@@ -79,14 +80,12 @@ export function Projects() {
                 <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
                   <Smartphone className="size-3.5" /> {p.downloads}
                 </span>
-                <a
+                <ExternalAnchor
                   href={p.url}
-                  target="_blank"
-                  rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:opacity-90 transition"
                 >
                   <ExternalLink className="size-3.5" /> {p.url.includes("play.google") ? "Play Store" : "View"}
-                </a>
+                </ExternalAnchor>
               </div>
             </motion.article>
           ))}
