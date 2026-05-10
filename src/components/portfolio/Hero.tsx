@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Sparkles } from "lucide-react";
+import { ExternalLink } from "./ExternalLink";
 
 export function Hero() {
   return (
@@ -70,14 +71,12 @@ export function Hero() {
             >
               <Sparkles className="size-4 text-primary" /> Contact Me
             </a>
-            <a
+            <ExternalLink
               href="https://www.linkedin.com/in/shivani-m-32487619b/"
-              target="_blank"
-              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-xl border border-border hover:border-primary/60 font-semibold px-6 py-3 transition"
             >
               <Download className="size-4" /> LinkedIn
-            </a>
+            </ExternalLink>
           </motion.div>
 
           {/* Stats */}
