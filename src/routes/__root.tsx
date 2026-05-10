@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Shivani Mandoddi - Game Developer" },
+      { name: "description", content: "Unity Game Developer with experience in 2D/3D games, React Native game platforms, Firebase backend systems, and cross-platform optimization." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Shivani Mandoddi - Game Developer" },
+      { property: "og:description", content: "Unity Game Developer with experience in 2D/3D games, React Native game platforms, Firebase backend systems, and cross-platform optimization." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Shivani Mandoddi - Game Developer" },
+      { name: "twitter:description", content: "Unity Game Developer with experience in 2D/3D games, React Native game platforms, Firebase backend systems, and cross-platform optimization." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/bfb347c5-0b6c-41d4-bc10-baafdc76a1d6" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/bfb347c5-0b6c-41d4-bc10-baafdc76a1d6" },
     ],
     links: [
       {
