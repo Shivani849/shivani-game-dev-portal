@@ -49,12 +49,18 @@ export function Projects() {
               className="group glass-strong rounded-2xl p-6 hover-lift flex flex-col"
             >
               <div className="flex items-start gap-4">
-                <img
-                  src={p.icon}
-                  alt={`${p.title} icon`}
-                  loading="lazy"
-                  className="size-16 rounded-xl object-cover border border-white/10 shadow-lg"
-                />
+                {p.icon ? (
+                  <img
+                    src={p.icon}
+                    alt={`${p.title} icon`}
+                    loading="lazy"
+                    className="size-16 rounded-xl object-cover border border-white/10 shadow-lg"
+                  />
+                ) : (
+                  <div className="size-16 rounded-xl border border-white/10 shadow-lg bg-gradient-to-br from-primary/30 to-accent/30 grid place-items-center">
+                    <Gamepad2 className="size-7 text-primary" />
+                  </div>
+                )}
                 <div className="min-w-0">
                   <div className="font-mono text-[10px] text-muted-foreground tracking-[0.2em] uppercase">{p.studio}</div>
                   <h3 className="font-semibold text-lg leading-tight mt-1">{p.title}</h3>
