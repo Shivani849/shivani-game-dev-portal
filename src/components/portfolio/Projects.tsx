@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Smartphone } from "lucide-react";
+import { ExternalLink, Smartphone, Gamepad2 } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
 const projects = [
