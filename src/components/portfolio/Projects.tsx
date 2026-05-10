@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Smartphone } from "lucide-react";
+import { ExternalLink, Smartphone, Gamepad2 } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
 const projects = [
@@ -22,13 +22,13 @@ const projects = [
     url: "https://play.google.com/store/apps/details?id=com.yesgnome.jigsolitaire&hl=en",
   },
   {
-    title: "YesGnome Game Suite",
-    studio: "YesGnome LLC",
-    desc: "Contributed to multiple casual mobile titles including Word Reels, Match Triple 3D, Dragon Master and more — all live on the Play Store.",
-    tech: ["Unity", "C#", "Multiplayer"],
-    downloads: "Multiple titles",
-    icon: "https://play-lh.googleusercontent.com/GWDdw9n9VVY8g7hdTddQla_TWXnB9o5MIbtjgGCfMfFcU4bgDjtpUiAO2BYVo8-KFlk=s64-rw",
-    url: "https://play.google.com/store/apps/developer?id=YesGnome+LLC",
+    title: "GamePe — Multi-Game Platform",
+    studio: "GamePe",
+    desc: "Worked on multiple casual game titles for the GamePe platform including Endless Runner, Ludo, Bollywood Trivia and Snake & Ladder. Focused on gameplay mechanics, UI flows and performance.",
+    tech: ["Unity", "C#", "2D/3D"],
+    downloads: "Internal / unreleased",
+    icon: "",
+    url: "https://gamepe.en.uptodown.com/android",
   },
 ];
 
@@ -49,12 +49,18 @@ export function Projects() {
               className="group glass-strong rounded-2xl p-6 hover-lift flex flex-col"
             >
               <div className="flex items-start gap-4">
-                <img
-                  src={p.icon}
-                  alt={`${p.title} icon`}
-                  loading="lazy"
-                  className="size-16 rounded-xl object-cover border border-white/10 shadow-lg"
-                />
+                {p.icon ? (
+                  <img
+                    src={p.icon}
+                    alt={`${p.title} icon`}
+                    loading="lazy"
+                    className="size-16 rounded-xl object-cover border border-white/10 shadow-lg"
+                  />
+                ) : (
+                  <div className="size-16 rounded-xl border border-white/10 shadow-lg bg-gradient-to-br from-primary/30 to-accent/30 grid place-items-center">
+                    <Gamepad2 className="size-7 text-primary" />
+                  </div>
+                )}
                 <div className="min-w-0">
                   <div className="font-mono text-[10px] text-muted-foreground tracking-[0.2em] uppercase">{p.studio}</div>
                   <h3 className="font-semibold text-lg leading-tight mt-1">{p.title}</h3>
@@ -79,7 +85,7 @@ export function Projects() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:opacity-90 transition"
                 >
-                  <ExternalLink className="size-3.5" /> Play Store
+                  <ExternalLink className="size-3.5" /> {p.url.includes("play.google") ? "Play Store" : "View"}
                 </a>
               </div>
             </motion.article>
