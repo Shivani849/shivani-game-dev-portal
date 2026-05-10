@@ -1,6 +1,12 @@
 import { Gamepad2, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
+const socials = [
+  { Icon: LinkedinIcon, href: "https://www.linkedin.com/in/shivani-m-32487619b/", label: "LinkedIn" },
+  { Icon: GithubIcon, href: "https://play.google.com/store/apps/developer?id=YesGnome+LLC", label: "Play Store" },
+  { Icon: Mail, href: "#contact", label: "Contact" },
+];
+
 export function Footer() {
   return (
     <footer className="relative border-t border-white/5 py-10 mt-10">
@@ -10,11 +16,18 @@ export function Footer() {
           <span className="font-semibold">Shivani<span className="text-primary">.dev</span></span>
         </div>
         <div className="text-xs font-mono text-muted-foreground">
-          © {new Date().getFullYear()} Shivani Mandoddi. Crafted with Unity-grade attention to detail.
+          © {new Date().getFullYear()} Shivani Mandoddi. Unity Game Developer.
         </div>
         <div className="flex gap-3">
-          {[LinkedinIcon, GithubIcon, Mail].map((Icon, i) => (
-            <a key={i} href="#" className="size-9 grid place-items-center rounded-lg glass hover:neon-glow transition">
+          {socials.map(({ Icon, href, label }) => (
+            <a
+              key={label}
+              href={href}
+              target={href.startsWith("http") ? "_blank" : undefined}
+              rel={href.startsWith("http") ? "noreferrer" : undefined}
+              aria-label={label}
+              className="size-9 grid place-items-center rounded-lg glass hover:neon-glow transition"
+            >
               <Icon className="size-4" />
             </a>
           ))}
