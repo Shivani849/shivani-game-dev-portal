@@ -71,10 +71,12 @@ export function Hero() {
               <Sparkles className="size-4 text-primary" /> Contact Me
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/shivani-m-32487619b/"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-xl border border-border hover:border-primary/60 font-semibold px-6 py-3 transition"
             >
-              <Download className="size-4" /> Resume
+              <Download className="size-4" /> LinkedIn
             </a>
           </motion.div>
 
