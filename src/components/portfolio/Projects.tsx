@@ -22,13 +22,13 @@ const projects = [
     url: "https://play.google.com/store/apps/details?id=com.yesgnome.jigsolitaire&hl=en",
   },
   {
-    title: "YesGnome Game Suite",
-    studio: "YesGnome LLC",
-    desc: "Contributed to multiple casual mobile titles including Word Reels, Match Triple 3D, Dragon Master and more — all live on the Play Store.",
-    tech: ["Unity", "C#", "Multiplayer"],
-    downloads: "Multiple titles",
-    icon: "https://play-lh.googleusercontent.com/GWDdw9n9VVY8g7hdTddQla_TWXnB9o5MIbtjgGCfMfFcU4bgDjtpUiAO2BYVo8-KFlk=s64-rw",
-    url: "https://play.google.com/store/apps/developer?id=YesGnome+LLC",
+    title: "GamePe — Multi-Game Platform",
+    studio: "GamePe",
+    desc: "Worked on multiple casual game titles for the GamePe platform including Endless Runner, Ludo, Bollywood Trivia and Snake & Ladder. Focused on gameplay mechanics, UI flows and performance.",
+    tech: ["Unity", "C#", "2D/3D"],
+    downloads: "Internal / unreleased",
+    icon: "",
+    url: "https://gamepe.en.uptodown.com/android",
   },
 ];
 
