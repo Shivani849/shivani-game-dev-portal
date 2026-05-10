@@ -65,7 +65,7 @@ export function Hero() {
               <ArrowRight className="size-4 group-hover:translate-x-1 transition" />
             </a>
             <a
-              href="#contact"
+              href="mailto:shivani.mandoddi@gmail.com"
               className="inline-flex items-center gap-2 rounded-xl glass hover:bg-white/10 font-semibold px-6 py-3 transition"
             >
               <Sparkles className="size-4 text-primary" /> Contact Me
