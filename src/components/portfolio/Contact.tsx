@@ -16,8 +16,8 @@ export function Contact() {
           <div className="lg:col-span-2 space-y-3">
             {[
               { icon: Mail, label: "Email", value: "shivani.mandoddi@example.com", href: "mailto:shivani.mandoddi@example.com" },
-              { icon: LinkedinIcon, label: "LinkedIn", value: "/in/shivani-mandoddi", href: "https://linkedin.com" },
-              { icon: GithubIcon, label: "GitHub", value: "@shivani-mandoddi", href: "https://github.com" },
+              { icon: LinkedinIcon, label: "LinkedIn", value: "/in/shivani-m-32487619b", href: "https://www.linkedin.com/in/shivani-m-32487619b/" },
+              { icon: GithubIcon, label: "Play Store", value: "Fusebox & YesGnome titles", href: "https://play.google.com/store/apps/developer?id=YesGnome+LLC" },
             ].map((c) => (
               <a
                 key={c.label}
