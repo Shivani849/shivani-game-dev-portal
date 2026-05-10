@@ -85,7 +85,7 @@ export function Projects() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:opacity-90 transition"
                 >
-                  <ExternalLink className="size-3.5" /> Play Store
+                  <ExternalLink className="size-3.5" /> {p.url.includes("play.google") ? "Play Store" : "View"}
                 </a>
               </div>
             </motion.article>
