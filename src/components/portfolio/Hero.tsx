@@ -98,47 +98,11 @@ export function Hero() {
             ))}
           </motion.div>
         </div>
-
-        {/* Right: stylised HUD card */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="lg:col-span-5 relative"
-        >
-          <div className="relative animate-float">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 blur-3xl" />
-            <div className="relative glass-strong rounded-3xl p-6 scan-lines overflow-hidden">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex gap-1.5">
-                  <span className="size-2.5 rounded-full bg-red-500/80" />
-                  <span className="size-2.5 rounded-full bg-yellow-500/80" />
-                  <span className="size-2.5 rounded-full bg-green-500/80" />
-                </div>
-                <span className="font-mono text-[10px] text-muted-foreground">PLAYER_PROFILE.exe</span>
-              </div>
-
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 via-accent/10 to-transparent border border-white/10 grid place-items-center relative overflow-hidden">
-                <div className="absolute inset-0 grid-bg opacity-40" />
-                <div className="relative text-center">
-                  <div className="text-[120px] font-bold text-gradient leading-none">SM</div>
-                  <div className="font-mono text-xs text-primary mt-2 tracking-[0.3em]">LVL 99</div>
-                </div>
-              </div>
-
-              <div className="mt-4 space-y-2 font-mono text-xs">
-                <Stat label="UNITY" value={95} />
-                <Stat label="C#" value={92} />
-                <Stat label="GAME_DESIGN" value={88} />
-                <Stat label="OPTIMIZATION" value={90} />
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
 }
+
 
 function Stat({ label, value }: { label: string; value: number }) {
   return (
