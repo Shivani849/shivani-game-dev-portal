@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Gamepad2, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "#about", label: "About" },
@@ -32,10 +32,6 @@ export function Navbar() {
       <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8`}>
         <div className={`glass-strong rounded-2xl px-5 py-3 flex items-center justify-between transition-all ${scrolled ? "shadow-lg" : ""}`}>
           <a href="#home" className="flex items-center gap-2 group">
-            <div className="relative">
-              <Gamepad2 className="size-6 text-primary" />
-              <div className="absolute inset-0 blur-lg bg-primary/40 group-hover:bg-primary/60 transition" />
-            </div>
             <span className="font-bold tracking-tight">
               Shivani<span className="text-primary">.dev</span>
             </span>
@@ -56,7 +52,7 @@ export function Navbar() {
 
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground text-sm font-semibold px-4 py-2 hover:opacity-90 transition neon-glow"
+            className="hidden md:inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground text-sm font-semibold px-4 py-2 hover:opacity-90 transition soft-glow"
           >
             Hire Me
           </a>
