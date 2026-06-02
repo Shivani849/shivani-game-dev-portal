@@ -56,7 +56,7 @@ export function About() {
                 transition={{ duration: 0.5, delay: i * 0.05 }}
                 className="glass rounded-2xl p-6 hover-lift group"
               >
-                <div className="size-10 rounded-xl bg-gradient-to-br from-primary/30 to-accent/30 grid place-items-center mb-4 group-hover:neon-glow transition">
+                <div className="size-10 rounded-xl bg-gradient-to-br from-primary/30 to-accent/30 grid place-items-center mb-4 group-hover:soft-glow transition">
                   <f.icon className="size-5 text-primary" />
                 </div>
                 <h4 className="font-semibold">{f.title}</h4>

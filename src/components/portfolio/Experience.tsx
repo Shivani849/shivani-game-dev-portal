@@ -57,7 +57,7 @@ export function Experience() {
               transition={{ duration: 0.6 }}
               className="relative pl-14 sm:pl-20 pb-10"
             >
-              <div className="absolute left-0 sm:left-1 top-2 size-8 sm:size-10 rounded-xl bg-gradient-to-br from-primary to-accent grid place-items-center neon-glow">
+              <div className="absolute left-0 sm:left-1 top-2 size-8 sm:size-10 rounded-xl bg-gradient-to-br from-primary to-accent grid place-items-center soft-glow">
                 <Briefcase className="size-4 text-primary-foreground" />
               </div>
 

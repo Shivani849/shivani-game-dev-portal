@@ -25,7 +25,7 @@ export function Contact() {
                 href={c.href}
                 className="flex items-center gap-4 glass rounded-2xl p-4 hover-lift group"
               >
-                <div className="size-11 rounded-xl bg-gradient-to-br from-primary/30 to-accent/30 grid place-items-center group-hover:neon-glow transition">
+                <div className="size-11 rounded-xl bg-gradient-to-br from-primary/30 to-accent/30 grid place-items-center group-hover:soft-glow transition">
                   <c.icon className="size-5 text-primary" />
                 </div>
                 <div>
@@ -57,7 +57,7 @@ export function Contact() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold px-6 py-3 neon-glow"
+              className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold px-6 py-3 soft-glow"
             >
               <Send className="size-4" />
               {sent ? "Message Sent — Thank you!" : "Send Message"}

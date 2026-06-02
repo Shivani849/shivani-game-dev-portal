@@ -58,7 +58,7 @@ export function Hero() {
           >
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold px-6 py-3 hover:opacity-90 transition neon-glow"
+              className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold px-6 py-3 hover:opacity-90 transition soft-glow"
             >
               View Projects
               <ArrowRight className="size-4 group-hover:translate-x-1 transition" />

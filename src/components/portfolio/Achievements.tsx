@@ -27,7 +27,7 @@ export function Achievements() {
               transition={{ duration: 0.5, delay: i * 0.05 }}
               className="glass rounded-2xl p-6 hover-lift relative overflow-hidden"
             >
-              <div className="size-12 rounded-xl bg-gradient-to-br from-primary to-accent grid place-items-center mb-4 neon-glow">
+              <div className="size-12 rounded-xl bg-gradient-to-br from-primary to-accent grid place-items-center mb-4 soft-glow">
                 <it.icon className="size-5 text-primary-foreground" />
               </div>
               <h4 className="font-semibold">{it.title}</h4>
