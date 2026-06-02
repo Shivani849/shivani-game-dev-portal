@@ -29,8 +29,6 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-neon: var(--neon);
-  --color-neon-2: var(--neon-2);
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
@@ -85,7 +83,7 @@
     background-attachment: fixed;
     overflow-x: hidden;
   }
-  ::selection { background: var(--neon); color: var(--primary-foreground); }
+  ::selection { background: var(--primary); color: var(--primary-foreground); }
 }
 
 @layer utilities {
