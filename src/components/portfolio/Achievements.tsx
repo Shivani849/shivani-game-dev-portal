@@ -15,7 +15,7 @@ export function Achievements() {
   return (
     <section id="achievements" className="relative py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader tag="Achievements" title="Trophy Case" subtitle="Milestones unlocked along the way." />
+        <SectionHeader tag="Achievements" title="Key Highlights" subtitle="Notable achievements and impact." />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((it, i) => (

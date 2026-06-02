@@ -22,7 +22,7 @@ export function Skills() {
   return (
     <section id="skills" className="relative py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader tag="Skills" title="Loadout" subtitle="Tools, engines and frameworks in my daily arsenal." />
+        <SectionHeader tag="Skills" title="Technical Skills" subtitle="Core competencies across engines, languages and platforms." />
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {skills.map((s, i) => (

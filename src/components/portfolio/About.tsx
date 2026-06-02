@@ -15,7 +15,7 @@ export function About() {
   return (
     <section id="about" className="relative py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader tag="About" title="Player Bio" subtitle="The story behind the code, the games, and the late-night build sessions." />
+        <SectionHeader tag="About" title="About Me" subtitle="Unity Game Developer with 3+ years of experience shipping commercial 2D & 3D mobile games." />
 
         <div className="grid lg:grid-cols-12 gap-8">
           <motion.div

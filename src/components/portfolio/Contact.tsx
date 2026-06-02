@@ -11,7 +11,7 @@ export function Contact() {
   return (
     <section id="contact" className="relative py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader tag="Contact" title="Start a New Game" subtitle="Open to collaborations, full-time roles and freelance projects." />
+        <SectionHeader tag="Contact" title="Get In Touch" subtitle="Open to collaborations, full-time roles and freelance projects." />
 
         <div className="grid lg:grid-cols-5 gap-6">
           <div className="lg:col-span-2 space-y-3">
