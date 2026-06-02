@@ -4,20 +4,40 @@ import { SectionHeader } from "./SectionHeader";
 
 const timeline = [
   {
-    role: "Unity Game Developer",
+    role: "Game Engineer",
     company: "PurpleTalk",
-    location: "Hyderabad, India",
-    date: "2022 — Present",
+    location: "Hyderabad, Telangana, India · On-site",
+    date: "Oct 2025 — Present",
     points: [
-      "Developed cross-platform 2D & 3D mobile games using Unity & C#.",
-      "Built and shipped multiple commercial titles — Bigg Boss, Fusebox & YesGnome projects.",
-      "Implemented real-time multiplayer systems and Firebase-backed live features.",
-      "Integrated REST APIs, monetization SDKs and analytics across game builds.",
-      "Designed reusable UI systems and optimised performance for low-end devices.",
+      "Building and shipping game features primarily in C#.",
+      "Developing performant 2D & 3D gameplay systems for mobile titles.",
+      "Optimising game performance and memory usage across devices.",
+    ],
+  },
+  {
+    role: "Associate Analyst — Game Engineer",
+    company: "PurpleTalk · Full-time",
+    location: "Hyderabad, Telangana, India · On-site",
+    date: "Nov 2023 — Present",
+    points: [
+      "Developed cross-platform mobile games using Unity, C# & React Native.",
+      "Implemented gameplay, UI systems and backend integrations.",
       "Bridged Unity with React Native frameworks for hybrid app experiences.",
     ],
   },
+  {
+    role: "Software Trainee",
+    company: "PurpleTalk · Full-time",
+    location: "Hyderabad, Telangana, India · On-site",
+    date: "Aug 2022 — Nov 2023",
+    points: [
+      "Trained in game development fundamentals with Unity & C#.",
+      "Contributed to live game projects and feature implementation.",
+      "Built foundational skills in gameplay programming and UI.",
+    ],
+  },
 ];
+
 
 export function Experience() {
   return (
