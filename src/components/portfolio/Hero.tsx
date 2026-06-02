@@ -103,22 +103,3 @@ export function Hero() {
   );
 }
 
-
-function Stat({ label, value }: { label: string; value: number }) {
-  return (
-    <div>
-      <div className="flex justify-between text-muted-foreground">
-        <span>{label}</span>
-        <span className="text-primary">{value}/100</span>
-      </div>
-      <div className="h-1.5 rounded-full bg-white/5 overflow-hidden mt-1">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: `${value}%` }}
-          transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
-          className="h-full bg-gradient-to-r from-primary to-accent"
-        />
-      </div>
-    </div>
-  );
-}
