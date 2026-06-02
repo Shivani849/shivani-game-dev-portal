@@ -15,7 +15,7 @@ export function About() {
   return (
     <section id="about" className="relative py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader tag="About" title="Player Bio" subtitle="The story behind the code, the games, and the late-night build sessions." />
+        <SectionHeader tag="About" title="About Me" subtitle="Unity Game Developer with 3+ years of experience shipping commercial 2D & 3D mobile games." />
 
         <div className="grid lg:grid-cols-12 gap-8">
           <motion.div
@@ -56,7 +56,7 @@ export function About() {
                 transition={{ duration: 0.5, delay: i * 0.05 }}
                 className="glass rounded-2xl p-6 hover-lift group"
               >
-                <div className="size-10 rounded-xl bg-gradient-to-br from-primary/30 to-accent/30 grid place-items-center mb-4 group-hover:neon-glow transition">
+                <div className="size-10 rounded-xl bg-gradient-to-br from-primary/30 to-accent/30 grid place-items-center mb-4 group-hover:soft-glow transition">
                   <f.icon className="size-5 text-primary" />
                 </div>
                 <h4 className="font-semibold">{f.title}</h4>

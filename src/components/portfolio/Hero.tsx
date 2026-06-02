@@ -5,8 +5,6 @@ import { ExternalLink } from "./ExternalLink";
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
-      {/* Animated grid */}
-      <div className="absolute inset-0 grid-bg animate-grid opacity-50 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
       {/* Glow orbs */}
       <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary/20 blur-3xl animate-float" />
       <div className="absolute bottom-0 right-0 w-[28rem] h-[28rem] rounded-full bg-accent/20 blur-3xl animate-float" style={{ animationDelay: "2s" }} />
@@ -39,7 +37,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="mt-6 text-2xl sm:text-3xl font-light text-foreground/90"
           >
-            <span className="font-mono text-primary">&gt;</span> Unity Game Developer
+            Unity Game Developer
           </motion.p>
 
           <motion.p
@@ -60,7 +58,7 @@ export function Hero() {
           >
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold px-6 py-3 hover:opacity-90 transition neon-glow"
+              className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold px-6 py-3 hover:opacity-90 transition soft-glow"
             >
               View Projects
               <ArrowRight className="size-4 group-hover:translate-x-1 transition" />

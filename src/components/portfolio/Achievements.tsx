@@ -15,7 +15,7 @@ export function Achievements() {
   return (
     <section id="achievements" className="relative py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader tag="Achievements" title="Trophy Case" subtitle="Milestones unlocked along the way." />
+        <SectionHeader tag="Achievements" title="Key Highlights" subtitle="Notable achievements and impact." />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((it, i) => (
@@ -27,7 +27,7 @@ export function Achievements() {
               transition={{ duration: 0.5, delay: i * 0.05 }}
               className="glass rounded-2xl p-6 hover-lift relative overflow-hidden"
             >
-              <div className="size-12 rounded-xl bg-gradient-to-br from-primary to-accent grid place-items-center mb-4 neon-glow">
+              <div className="size-12 rounded-xl bg-gradient-to-br from-primary to-accent grid place-items-center mb-4 soft-glow">
                 <it.icon className="size-5 text-primary-foreground" />
               </div>
               <h4 className="font-semibold">{it.title}</h4>

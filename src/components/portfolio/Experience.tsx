@@ -43,7 +43,7 @@ export function Experience() {
   return (
     <section id="experience" className="relative py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader tag="Experience" title="Career Timeline" subtitle="Where I've levelled up." />
+        <SectionHeader tag="Experience" title="Career Timeline" subtitle="Professional journey and key contributions." />
 
         <div className="relative">
           <div className="absolute left-4 sm:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-accent to-transparent" />
@@ -57,7 +57,7 @@ export function Experience() {
               transition={{ duration: 0.6 }}
               className="relative pl-14 sm:pl-20 pb-10"
             >
-              <div className="absolute left-0 sm:left-1 top-2 size-8 sm:size-10 rounded-xl bg-gradient-to-br from-primary to-accent grid place-items-center neon-glow">
+              <div className="absolute left-0 sm:left-1 top-2 size-8 sm:size-10 rounded-xl bg-gradient-to-br from-primary to-accent grid place-items-center soft-glow">
                 <Briefcase className="size-4 text-primary-foreground" />
               </div>
 
